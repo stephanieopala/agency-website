@@ -226,6 +226,10 @@ form {
     background-color: var(--primary-color);
     color: white;
     border: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 .contact-info {
     width: 350px;
@@ -240,6 +244,21 @@ form {
 .contact-icon {
     width: 20px;
     margin-right: 20px;
+}
+.error {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.contact-input {
+    position: relative;
+}
+.icon {
+    color: var(--primary-color);
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    display: none;
 }
 
 @media (max-width: 1068px) {

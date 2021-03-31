@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Tiffany's Agency</title>
 </head>
@@ -54,21 +55,28 @@
             <div class="contact-form">
                 <form>
                     <div class="contact-input">
-                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="First Name" id="fname">
+                        <i class="fa fa-check-square icon"></i>
+                        <div class="fname-error error"></div>
                     </div>
                     <div class="contact-input">
-                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="Last Name" id="lname">
+                        <i class="fa fa-check-square icon"></i>
+                        <div class="lname-error error"></div>
                     </div>
                     <div class="contact-input">
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" id="email">
+                        <i class="fa fa-check-square icon"></i>
+                        <div class="email-error error"></div>
                     </div>
                     <div class="contact-input">
-                        <textarea class="" placeholder="Message"></textarea>
+                        <textarea class="" placeholder="Message" id="message"></textarea>
+                        <i class="fa fa-check-square icon"></i>
+                        <div class="message-error error"></div>
                     </div>
-                    <div class="contact-input">
-                        <input class="contact-btn" type="submit" value="Submit">
-
-                    </div>
+                    
+                        <button type= "submit" class="contact-btn"> Submit </button>
+                    
                 </form>
             </div>
             <div class="contact-info">
@@ -101,6 +109,7 @@
             </div>
         </div>
     </section>
-    <script src="app.js"></script>
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/contact.js"></script>
 </body>
 </html>
